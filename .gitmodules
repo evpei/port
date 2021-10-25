@@ -1,0 +1,6 @@
+[submodule "port-backend"]
+	path = port-backend
+	url = git@github.com:evp-el-Id/port-backend.git
+[submodule "port-frontend"]
+	path = port-frontend
+	url = git@github.com:evp-el-Id/port-frontend.git
