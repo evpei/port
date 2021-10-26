@@ -1,0 +1,7 @@
+version: "3.9"
+services: 
+  ubuntu:
+    build: 
+      context: ./docker/util
+      dockerfile: Dockerfile
+    network_mode: host
