@@ -7,7 +7,7 @@ services:
       args:
         PACKAGE_JSON: "$PWD/package.json"
     volumes: 
-      - ./port_frontend:/app
+      - ./port-frontend:/app
     ports: 
       - "${EXPOSE_FRONTEND_PORT:-3000}:3000"
     networks: 
@@ -23,6 +23,8 @@ services:
         uid: 1000
       context: ./docker/development/backend
       dockerfile: Dockerfile
+    volumes: 
+      - ./port-backend:/app
     ports: 
       - "${EXPOSE_BACKEND_PORT:-80}:80"
     networks:  
